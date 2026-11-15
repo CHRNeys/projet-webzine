@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webzine</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <svg class="site-logo" width="100" viewBox="0 0 100 100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="red"></circle>
+        <rect x="35" y="35" width="30"></rect>
+      </svg>
+      <h1>Webzine Multimédia</h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a href="#actualités">Actualités</a></li>
+          <li class="nav-item"><a href="#podcast">Podcast</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="hero-section">
+        <h2>Presentation et decouverte</h2>
+        <p>
+          Welcome bienvenue dans l'un des plus beaux stades du monde,
+          <mark>le thêatre majestieux du Fc Barcelone </mark>, le Camp Nou. A
+          l'affiche le Fc Barcelone contre les olympiens de l'Olympique de
+          Marseille.
+        </p>
+        <p>
+          Alors Florian qui sera l'homme du match selon toi ? Florian: Je dirai
+          Pedri. Son profil de playmarker est loué pour
+          <mark> sa vision du jeu </mark>, ses gestions des temps forts et des
+          temps faibles du match avec sérénité, sa qualité de passe bref tout ce
+          qu'il faut pour faire de lui le <abbr title="Patron"> tché </abbr> du
+          Fc Barcelone.
+        </p>
+        <video controls class="promo-video">
+          <source src="videos/Kebab.MP4" />
+          <track src="sous-titres.vtt" kind="subtitles" label="français" />
+        </video>
+      </section>
+      <section id="latest-posts">
+        <h2>Flux d'actualités</h2>
+        <!--Article 1-->
+        <article class="post-card">
+          <header>
+            <h3>Nouveautés du Kebab</h3>
+            <time datetime="2026-11-12" class="post-date">12 Novembre</time>
+          </header>
+          <figure class="post-thumbnail">
+            <img
+              src="images/Kebab.jpg"
+              alt="Kebab pour Florian"
+              width="500"
+              height="250"
+            />
+            <figcaption>Voici les nouveautés du Kebab.</figcaption>
+          </figure>
+          <p>Regardez les nouvelles sorties du Kebabier de Best'sandwich</p>
+          <footer>
+            <ul>
+              <li>Kebab</li>
+              <li>Best'sandwich</li>
+            </ul>
+            <a href="#article2">Lire la suite</a>
+          </footer>
+        </article>
+        <!--Article 2-->
+        <article class="post-card" id="article2">
+          <header>
+            <h3>Le Tacos</h3>
+            <time datetime="2026-11-12" class="post-date">12 Novembre</time>
+          </header>
+          <figure class="post-thumbnail">
+            <img
+              src="images/Tacos.jpg"
+              alt="Tacos pour bien demarrer la journée"
+              width="500"
+              height="250"
+            />
+            <figcaption>Tacos 2 viandes.</figcaption>
+          </figure>
+          <p>Voici un tacos 2 viandes. Kebab poulet meilleur duo.</p>
+          <footer>
+            <ul>
+              <li>Kebab</li>
+              <li>Poulet</li>
+            </ul>
+            <a href="#article3">Lire la suite</a>
+          </footer>
+        </article>
+        <!--Article 3-->
+        <article class="post-card" id="article3">
+          <header>
+            <h3>Attiéké, la spécialité ivoirienne</h3>
+            <time datetime="2026-11-12" class="post-date">12 Novembre</time>
+          </header>
+          <figure class="post-thumbnail">
+            <img
+              src="images/Attiéke.jpg"
+              alt="Attiéké de Babi"
+              width="500"
+              height="250"
+            />
+            <figcaption>
+              C'est la spécialité de toute la Côte d'Ivoire.
+            </figcaption>
+          </figure>
+          <p>
+            Accompagnement national de la Côte d'Ivoire reconnu sur la scène
+            internationale.
+          </p>
+          <footer>
+            <ul>
+              <li>Attiéké</li>
+              <li>Côte d'Ivoire</li>
+            </ul>
+            <a href="#article4">Lire la suite</a>
+          </footer>
+        </article>
+        <!--Article 4-->
+        <article class="post-card" id="article4">
+          <header>
+            <h3>Alloco, le chouchou ivoirien</h3>
+            <time datetime="2026-11-12" class="post-date">12 Novembre</time>
+          </header>
+          <figure class="post-thumbnail">
+            <img
+              src="images/Alloco.jpg"
+              alt="Alloco"
+              width="500"
+              height="250"
+            />
+            <figcaption>C'est le 2e plat préféré des ivoiriens.</figcaption>
+          </figure>
+          <p>
+            Voici l'un des plats préférés des ivoiriens, pour certains c'est le
+            meilleur plat du pays. Ce plat est fait à base de bananes plantain
+            et c'est très bon.
+          </p>
+          <footer>
+            <ul>
+              <li>Alloco</li>
+              <li>Banane</li>
+            </ul>
+          </footer>
+        </article>
+      </section>
+      <section id="media-center">
+        <h2>Espace Podcast & Transcriptions</h2>
+        <audio controls class="podcast-player">
+          <source src="audio/frenchmusic.mp3" type="audio/mpeg" />
+          Votre navigateurvne prend pas en charge la lecture audio.
+        </audio>
+      </section>
+      <section>
+        <h2>Transcriptions</h2>
+        <details class="transcript-box">
+          <summary>Montrer la transcription</summary>
+          <dl>
+            <dt>Florian :</dt>
+            <dd>Fabien, tu manges Kebab aujourd'hui ?</dd>
+          </dl>
+          <dl>
+            <dt>Fabien :</dt>
+            <dd>Non pas aujourd'hui. J'ai apporté ma gamelle.</dd>
+          </dl>
+          <dl>
+            <dt>Florian :</dt>
+            <dd>
+              Aahh tu me laisses tout seul aujourd'hui. T'as apporté quoi
+              aujourd'hui ?
+            </dd>
+          </dl>
+          <dl>
+            <dt>Fabien :</dt>
+            <dd>Kebab fait maison !</dd>
+          </dl>
+          <dl>
+            <dt>Florian :</dt>
+            <dd>
+              C'est super ça reste toujours un Kebab je ne suis pas seul en fin
+              de compte.
+            </dd>
+          </dl>
+        </details>
+      </section>
+
+      <section id="authors-ranking">
+        <h2>Données Statistiques</h2>
+        <table class="data-table" border="2">
+          <caption>
+            Classement des Kebabs
+          </caption>
+          <thead>
+            <tr>
+              <th>Personne</th>
+              <th>Novembre</th>
+              <th>Decembre</th>
+              <th>Janvier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Florian</td>
+              <td>19</td>
+              <td>17</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Fabien</td>
+              <td>15</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Christ</td>
+              <td>5</td>
+              <td>4</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total de Kebabs mangés</td>
+              <td>106</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Carte Interactive</h2>
+        <h3>Carte de la Côte d'Ivoire</h3>
+        <p>
+          Cliquez sur les illustrations pour decouvrir les lieux et monuments
+          des champions d'Afrique.
+        </p>
+        <img
+          src="images/Carte.jpg"
+          alt="Carte de la Côte d'Ivoire"
+          usemap="#Carte"
+          width="500"
+          height="500"
+        />
+        <map name="Carte">
+          <!--Parc national de Taï-->
+          <area shape="rect" coords="38,258,152,332" href="#Parc" alt="#Parc" />
+          <!-- Monts Nimba -->
+          <area
+            shape="circle"
+            coords="110,207,47"
+            href="#nimba"
+            alt="Monts Nimba"
+          />
+          <!-- Abidjan-->
+          <area
+            shape="rect"
+            coords="285,297,395,387"
+            href="#abidjan"
+            alt="Abidjan"
+          />
+          <!--Basilique de Yakro-->
+          <area
+            shape="circle"
+            coords="258,238,52"
+            href="#basiliquedeyakro"
+            alt="Basilique Notre-Dame de la paix"
+          />
+          <!--Parc de la Comoé-->
+          <area
+            shape="rect"
+            coords="360,117,450,180"
+            href="#comoe"
+            alt="Parc de la Comoé"
+          />
+        </map>
+        <h3>Graphique statistique</h3>
+        <canvas id="stats-canvas" width="400" height="200" class="stats-canvas">
+        </canvas>
+      </section>
+      <hr />
+      <footer id="main-footer">
+        <div class="contact-info">
+          <strong>Tp-webzine</strong><br />4 Rue Bernard Cognet,St jean de
+          braye<br />
+          <a href="mailto:kassichristelisee@gmail.com"
+            >kassichristelisee@gmail.com</a
+          >
+        </div>
+        <ul>
+          <li><a href="#mentions-legales">Mentions légales</a></li>
+          <li><a href="#plan-du-site">Plan du site</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <small class="copyright-text">
+          &copy; 2026 - Tous droits reservés crée avec passion en HTML5 et pour
+          les Kebabs
+        </small>
+      </footer>
+    </main>
+  </body>
+</html>
