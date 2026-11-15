@@ -154,7 +154,7 @@
         <h2>Espace Podcast & Transcriptions</h2>
         <audio controls class="podcast-player">
           <source src="audio/frenchmusic.mp3" type="audio/mpeg" />
-          Votre navigateurvne prend pas en charge la lecture audio.
+          Votre navigateur ne prend pas en charge la lecture audio.
         </audio>
       </section>
       <section>
@@ -241,47 +241,41 @@
           des champions d'Afrique.
         </p>
         <img
-          src="images/Carte.jpg"
-          alt="Carte de la Côte d'Ivoire"
-          usemap="#Carte"
-          width="500"
-          height="500"
+          src="images/Abidjan.jpg"
+          alt="Carte"
+          width="881"
+          height="653"
+          usemap="#carte-abidjan"
         />
-        <map name="Carte">
-          <!--Parc national de Taï-->
-          <area shape="rect" coords="38,258,152,332" href="#Parc" alt="#Parc" />
-          <!-- Monts Nimba -->
-          <area
-            shape="circle"
-            coords="110,207,47"
-            href="#nimba"
-            alt="Monts Nimba"
-          />
-          <!-- Abidjan-->
+
+        <map name="carte-abidjan">
+          <!-- Zone rectangulaire : Yopougon -->
           <area
             shape="rect"
-            coords="285,297,395,387"
-            href="#abidjan"
-            alt="Abidjan"
+            coords="330,350,405,395"
+            href="#yopougon"
+            alt="Yopougon"
+            title="Cliquer pour voir Yopougon"
           />
-          <!--Basilique de Yakro-->
+
+          <!-- Zone circulaire : Cocody -->
           <area
             shape="circle"
-            coords="258,238,52"
-            href="#basiliquedeyakro"
-            alt="Basilique Notre-Dame de la paix"
-          />
-          <!--Parc de la Comoé-->
-          <area
-            shape="rect"
-            coords="360,117,450,180"
-            href="#comoe"
-            alt="Parc de la Comoé"
+            coords="480,327,30"
+            href="#cocody"
+            alt="Cocody"
+            title="Cliquer pour voir Cocody"
           />
         </map>
-        <h3>Graphique statistique</h3>
-        <canvas id="stats-canvas" width="400" height="200" class="stats-canvas">
-        </canvas>
+
+        <h3 id="yopougon">Yopougon</h3>
+        <p>Quartier situé à l'ouest d'Abidjan.</p>
+
+        <h3 id="cocody">Cocody</h3>
+        <p>Quartier situé à l'est du Plateau, à Abidjan.</p>
+
+        <h2>Graphique statistique</h2>
+        <canvas width="400" height="200" class="stats-canvas"></canvas>
       </section>
       <hr />
       <footer id="main-footer">
