@@ -1,0 +1,86 @@
+body {
+  background-color: #d6d7d9;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+.h1,
+h2,
+h3 {
+  color: #0077b6;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*En-tete*/
+#main-header {
+  background-color: #8a152e;
+  color: #733bc7;
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-item {
+  display: inline-block;
+  margin: 10px;
+}
+/* Liens du menu*/
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav-item a:hover {
+  color: #0077b6;
+}
+/*Articles*/
+.post-card {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin: 1%;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.post-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+.data-table tbody tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+.transcript-box {
+  padding: 15px;
+  border-left: 5px solid #0077b6;
+}
+/*Pied de la page*/
+#main-footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+/*Contact*/
+.contact-info {
+  margin: 15px;
+  line-height: 1.8;
+}
