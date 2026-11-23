@@ -88,3 +88,149 @@ h3 {
 summary {
   cursor: pointer;
 }
+/* Nouveau code */
+.nav-item a:hover {
+  color: floralwhite;
+  background-color: aqua;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Ajout du style au clic */
+.nav-item a:active {
+  opacity: 0.7;
+}
+/* Navigation au clavier */
+.nav-item a:focus {
+  outline: 2px;
+  outline-offset: 3px;
+}
+.post-card footer li:last-child {
+  color: white;
+  background-color: darkgrey;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.post-card footer li:not(:last-child) {
+  background-color: dodgerblue;
+  border: 1px solid #dddddd;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+/* Tableau */
+.data-table tbody tr:nth-child(odd) {
+  background-color: bisque;
+}
+.data-table tbody tr:nth-child(even) {
+  background-color: antiquewhite;
+}
+.data-table tr:not(:first-child) :hover {
+  background-color: burlywood;
+  cursor: pointer;
+}
+/* Bloc deroulant */
+summary:hover {
+  color: blanchedalmond;
+  cursor: pointer;
+}
+details[open] summary {
+  color: cornsilk;
+  font-weight: bold;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 8px;
+}
+
+#hero-section p:first-of-type::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: darkred;
+}
+/* Apparence du texte selectionné */
+::selection {
+  background-color: crimson;
+  color: white;
+}
+/* Ajout du trait decoratif */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: indigo;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+.nav-item a {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.post-card {
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.post-thumbnail {
+  overflow: hidden;
+}
+.post-thumbnail img {
+  transition: transform 0.4s ease;
+.post-card:hover .post-thumbnail img {
+  transform: scale(1.05);
+}
+.data-table tr {
+  transition: background-color 0.2s ease-in-out,
+  color 0.2s ease-in-out;
+}
+summary::marker {
+  transition:
+  background-color 0.2s ease-in-out,
+  color 0.2s ease-in-out;
+}
+/* Securisation des médias */
+img,
+.promo-video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+/* Palier tablette */
+@media screen and (max-width: 900px) {
+  #main-content {
+    padding: 0 20px;
+  }
+  #main-header {
+    padding: 1.5rem;
+  }
+  .post-card {
+    width: 47%;
+  }
+}
+/* Palier mobile */
+@media screen and (max-width: 600px) {
+  .nav-item {
+    display: block;
+    margin: 8px 0;
+  }
+  .post-card {
+    width: 100%;
+    margin: 15px 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .data-table {
+    font-size: 0.85rem;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 6px;
+  }
+ }
